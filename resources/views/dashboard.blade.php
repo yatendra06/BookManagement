@@ -4,7 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
         <h3>
-            <a href="{{ route('books.index') }}"class="btn btn-success">Go to Book ManageMent Pae</a>
+            <a href="{{ route('books.index') }}"class="btn btn-success">Go to Book ManageMent Page</a>
         </h3>
     </x-slot>
 
