@@ -1,1 +1,9 @@
 /node_modules
+
+
+Search Functionality: A search feature has been implemented to allow filtering of books by both title and author.
+Rating System: A rating system has been added, enabling users to rate books from 1 to 5 stars.
+User Authentication: User registration and login functionality has been set up, allowing users to securely create accounts and log in.
+Comments on Books: Users can now leave comments on individual books to share their thoughts.
+Pagination: Pagination has been implemented for the book list to enhance performance and user experience when browsing multiple books.
+I have attached all the files. If anything is wrong, please let me know. Thank you.

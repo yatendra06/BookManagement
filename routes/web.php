@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CommentController;
-
+use App\Http\Controllers\PaymentController;
 /*
 |---------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +32,11 @@ Route::middleware('auth')->group(function () {
     Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile/destroy', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('books', BookController::class);
+    // Route::get('/payment', function () {
+    //     return view('payment');
+    // });
+    Route::any('/payment', [PaymentController::class, 'payment']);
+
     Route::get('books/{book}/comments', [CommentController::class, 'index'])->name('comments.index');  // Show comments for a book
     Route::post('books/{book}/comments', [CommentController::class, 'store'])->name('comments.store');  // Store a comment for a book
     Route::post('books/{book}/rate', [BookController::class, 'rate'])->name('books.rate');  // Rate a book (1 to 5 stars)
